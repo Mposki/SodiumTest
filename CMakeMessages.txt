@@ -1,0 +1,93 @@
+The C compiler identification is MSVC 19.22.27905.0
+The CXX compiler identification is MSVC 19.22.27905.0
+Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe
+Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe -- works
+Detecting C compiler ABI info
+Detecting C compiler ABI info - done
+Detecting C compile features
+Detecting C compile features - done
+Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe
+Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe -- works
+Detecting CXX compiler ABI info
+Detecting CXX compiler ABI info - done
+Detecting CXX compile features
+Detecting CXX compile features - done
+Could NOT find sodium (missing: sodium_LIBRARY_RELEASE sodium_LIBRARY_DEBUG) (found version "
+#ifndef sodium_version_H
+#define sodium_version_H
+
+#include "export.h"
+
+#define SODIUM_VERSION_STRING "1.0.17"
+
+#define SODIUM_LIBRARY_VERSION_MAJOR 10
+#define SODIUM_LIBRARY_VERSION_MINOR 2
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+SODIUM_EXPORT
+const char *sodium_version_string(void);
+
+SODIUM_EXPORT
+int         sodium_library_version_major(void);
+
+SODIUM_EXPORT
+int         sodium_library_version_minor(void);
+
+SODIUM_EXPORT
+int         sodium_library_minimal(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+")
+sodium_FOUND: FALSE
+sodium_INCLUDE_DIR: C:/Libsodium/include
+sodium_LIBRARY_DEBUG: sodium_LIBRARY_DEBUG-NOTFOUND
+sodium_LIBRARY_RELEASE: sodium_LIBRARY_RELEASE-NOTFOUND
+sodium_VERSION_STRING: 
+#ifndef sodium_version_H
+#define sodium_version_H
+
+#include "export.h"
+
+#define SODIUM_VERSION_STRING "1.0.17"
+
+#define SODIUM_LIBRARY_VERSION_MAJOR 10
+#define SODIUM_LIBRARY_VERSION_MINOR 2
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+SODIUM_EXPORT
+const char *sodium_version_string(void);
+
+SODIUM_EXPORT
+int         sodium_library_version_major(void);
+
+SODIUM_EXPORT
+int         sodium_library_version_minor(void);
+
+SODIUM_EXPORT
+int         sodium_library_minimal(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+sodium_LIBRARY_DEBUG (ADVANCED)
+    linked by target "TestCMake" in directory C:/Users/Maike/Documents/TestCMake
+
+Configuring incomplete, errors occurred!
+See also "C:/Users/Maike/Documents/TestCMake/Build/CMakeFiles/CMakeOutput.log".
